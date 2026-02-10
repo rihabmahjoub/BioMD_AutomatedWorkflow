@@ -1,0 +1,16 @@
+name: easyMD_v2
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - gromacs
+  - openbabel
+  - mdanalysis
+  - mdtraj
+  - numpy
+  - scipy
+  - matplotlib
+  - seaborn
+  - biopython
+

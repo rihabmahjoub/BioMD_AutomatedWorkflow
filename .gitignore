@@ -1,0 +1,23 @@
+# MD outputs
+outputs/
+*.xtc
+*.trr
+*.tpr
+*.edr
+*.log
+*.cpt
+*.pdb
+*.gro
+
+# backups
+#*
+*~
+
+# python
+__pycache__/
+*.pyc
+
+# ACPYPE
+*.acpype/
+
+

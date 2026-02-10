@@ -1,0 +1,17 @@
+integrator  = md
+dt          = 0.0005     ; very small timestep
+nsteps      = 200000     ; 100 ps
+
+tcoupl      = V-rescale
+tc-grps     = Protein Non-Protein
+tau_t       = 1.0 1.0
+ref_t       = 300 300
+
+pcoupl      = no
+constraints = h-bonds
+
+lincs_iter  = 2
+lincs_order = 6
+
+cutoff-scheme = Verlet
+
