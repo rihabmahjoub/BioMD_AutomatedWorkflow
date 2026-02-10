@@ -29,6 +29,14 @@ An automated molecular dynamics pipeline for protein–ligand systems using:
 - scikit-learn
 - reportlab
 
+## Inputs
+
+Place your files in:
+
+inputs/
+   protein.pdb
+   ligand.sdf
+
 ## Run
 
 ```bash
