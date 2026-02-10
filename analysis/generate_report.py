@@ -3,7 +3,18 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet
 import os
 
-doc = SimpleDocTemplate("outputs/analysis/MD_report.pdf", pagesize=letter)
+# ---------------------------
+# Fix paths robustly
+# ---------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "analysis")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+pdf_path = os.path.join(OUTPUT_DIR, "MD_report.pdf")
+
+doc = SimpleDocTemplate(pdf_path, pagesize=letter)
+
 styles = getSampleStyleSheet()
 elements = []
 

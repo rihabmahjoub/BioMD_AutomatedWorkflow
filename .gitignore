@@ -1,35 +1,29 @@
-# MD outputs
+# Runtime outputs
 outputs/
+
+# Allow example outputs
+!example_run/outputs/
+!example_run/outputs/**
+
+# Heavy MD files
 *.xtc
 *.trr
-*.tpr
 *.edr
-*.log
+*.tpr
 *.cpt
-*.pdb
-*.gro
+*.log
 
-# backups
-#*
-*~
+# Temporary structures
+step*.pdb
 
-# python
+# Python
 __pycache__/
 *.pyc
 
 # ACPYPE
 *.acpype/
 
-
-# Ignore runtime inputs
+# Inputs runtime
 inputs/*
 !inputs/.gitkeep
 
-# Ignore outputs
-outputs/
-
-# Ignore heavy MD files
-*.xtc
-*.trr
-*.edr
-step*.pdb
