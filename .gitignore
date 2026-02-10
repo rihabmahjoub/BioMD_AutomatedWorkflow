@@ -21,3 +21,15 @@ __pycache__/
 *.acpype/
 
 
+# Ignore runtime inputs
+inputs/*
+!inputs/.gitkeep
+
+# Ignore outputs
+outputs/
+
+# Ignore heavy MD files
+*.xtc
+*.trr
+*.edr
+step*.pdb
