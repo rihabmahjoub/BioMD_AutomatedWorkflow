@@ -6,9 +6,11 @@
 ![GROMACS](https://img.shields.io/badge/GROMACS-2021+-orange)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
+
+
 BioMD_AutomatedWorkflow is a fully automated molecular dynamics pipeline designed to prepare, simulate, and analyze protein–ligand systems using GROMACS and MDAnalysis.
 
-The workflow performs:
+#The workflow performs:
 
 - Protein preparation
 - Ligand preparation
@@ -26,29 +28,6 @@ This pipeline is designed for:
 - Educational use
 
 ---
-## Workflow
-
-```mermaid
-flowchart TD
-
-A[Protein PDB] --> B[Protein Preparation]
-C[Ligand SDF] --> D[Ligand Preparation]
-
-B --> E[Complex Assembly]
-D --> E
-
-E --> F[Box Creation]
-F --> G[Solvation]
-G --> H[Ion Addition]
-
-H --> I[Energy Minimization]
-I --> J[NVT Equilibration]
-J --> K[NPT Equilibration]
-K --> L[Production MD]
-
-L --> M[Trajectory Analysis]
-M --> N[Plots and PDF Report]
-
 
 
 # Workflow Overview
